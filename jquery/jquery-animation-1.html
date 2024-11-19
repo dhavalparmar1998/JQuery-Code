@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <body>
+         <button id="x1">Animate</button>
+       
+         <p>
+            hello
+         </p>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+            <script>
+            $(function(){
+               $("p").addClass("p1");
+
+               $("button").click(function(){
+                $("p").animate({
+                    "margin-left":"200px",
+                    "width":"200px",
+                    "font-size":"30px",
+                    "border-radius":"20px",
+                    "background":"gray"
+
+                },3000 , function(){
+                    $("p").css("background","gray");
+                });
+               })
+
+               })
+               
+           
+            </script>
+            <style>
+                .p1{
+                    border: solid;
+                    width: 100px;
+                    height: 100px;
+                }
+
+            </style>
+           
+        
+        </body>
+    </head>
+</html>

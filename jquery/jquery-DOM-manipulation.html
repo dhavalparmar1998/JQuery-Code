@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <body>
+      
+    <input type="text" id="txt">
+    <button>Enter</button>
+
+    <p>
+        Para before div
+    </p>
+    <div style="border: solid;">
+        hello world
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem modi reprehenderit, sint aliquid adipisci laboriosam provident. Ea, sint eveniet amet accusamus voluptatem est aspernatur ullam unde asperiores. Non, ipsam est.
+    </div>
+    <p>Para after div</p>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+      <script>
+        $(function () {
+            $("button").click(function(){
+                // $("div").remove();
+                // $("div").empty();
+                // $("div").text(`hello <b>world</b>`);
+                // $("div").html(`hello <b>world</b>`);
+                // $("div").append(`
+                //  <h1>hello</h1>
+                //  <h2>hello</h2>
+                // `)
+                // $("div").prepend(`
+                //  <h1>hello</h1>
+                //  <h2>hello</h2>
+                // `)
+                // $("div").after(`
+                //  <h1>hello</h1>
+                //  <h2>hello</h2>
+                // `)
+                // $("div").before(`
+                //  <h1>hello</h1>
+                //  <h2>hello</h2>
+                // `)
+                $("#txt").val(9000);
+
+            })
+         
+        });
+      </script>
+   
+    </body>
+  </head>
+</html>

@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <style>
+            .p1{
+                background-color: gray !important;
+            }
+            .p2{
+                font-size: 40px;
+            }
+            .p3{
+                text-transform: uppercase;
+            }
+        </style>
+    </head>
+    <body>
+        <button id="x1">Add</button>
+        <button id="x2">Remove</button>
+        <button id="x3">Add/Remove</button>
+        <button id="x4">Check</button>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur aut expedita veniam dicta delectus maiores ab quis natus voluptate, nostrum, tempora recusandae. Sequi dolorem optio earum deserunt iste aut recusandae.
+        </p>
+       
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+        <script>
+            $(function(){
+                $("#x1").click(function(){
+                    $("p").addClass("p1 p2 p3")
+                })
+                $("#x2").click(function(){
+                    $("p").removeClass("p2 p3")
+                })
+                $("#x3").click(function(){
+                    $("p").toggleClass("p2 p3")
+                })
+                $("#x4").click(function(){
+                   console.log($("p").hasClass("p1"));
+                   console.log($("p").hasClass("p2"));
+                });
+            });
+        </script>
+
+        
+
+    </body>
+
+</html>

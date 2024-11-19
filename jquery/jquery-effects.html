@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <body>
+         <button id="x1">Hide</button>
+         <button id="x2">Show</button>
+         <button id="x3">Hide/Show</button>
+         <button id="x4">Hide L</button>
+         <p style="border: solid;">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, saepe dolor totam dicta consequuntur dolorem molestiae. Quae, ipsam a reiciendis totam harum eum delectus, voluptatibus quidem autem, tempora optio modi!
+         </p>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+            <script>
+            $(function(){
+                $("#x1").click(function(){
+                //    $("p").css("display", "none");
+                // $("p").hide();
+                // $("p").slideUp(2000);
+                $("p").fadeOut(2000);
+
+                });
+
+                $("#x2").click(function(){
+                //    $("p").css("display", "");
+                // $("p").show();
+                // $("p").slideDown(2000);
+                $("p").fadeIn(2000);
+
+                });
+                
+                $("#x3").click(function(){
+                //    $("p").toggle();
+                
+                // $("p").slideToggle(2000);
+                $("p").fadeToggle(2000);
+
+                });
+
+                $("#x4").click(function(){
+                $("p").fadeTo(2000 , 0.4);
+
+                });
+                
+
+
+
+               })
+               
+           
+            </script>
+           
+        
+        </body>
+    </head>
+</html>

@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <body>
+      <button>Enter</button>
+      <ul>
+        <li>test1</li>
+        <li>test2</li>
+        <li>test3</li>
+        <li id="xyz" style="border: solid">test4</li>
+        <li>test5</li>
+        <li>test6</li>
+        <li>test7</li>
+      </ul>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+      <script>
+        $(function () {
+          $("#xyz").click(function () {
+            // $(this).css("background", "gray");
+            // $(this).next().css("background", "gray");
+            // $(this).prev().css("background", "lightgray");
+            // $(this).nextAll().css("background", "gray");
+            // $(this).prevAll().css("background", "gray");
+            // $(this).siblings().css("background", "gray");
+            // $(this).parent().css("border", "solid red");
+            // $(this).parents().css("border", "solid red");
+            $(this).parentsUntil("html").css("border", "solid red");
+          });
+
+          $("button").click(function(){
+            // $("ul").children("li").css("background","gray");
+            // filter
+            // $("ul").children("li:first").css("background","gray");
+            // $("ul").children("li:last").css("background","gray");
+            // $("ul").children("li:eq(2)").css("background","gray");
+            // $("ul").children("li:gt(2)").css("background","gray");
+            // $("ul").children("li:lt(2)").css("background","gray");
+            // $("ul").children("li:not(:eq(2))").css("background","gray");
+
+            $("ul").children("li:odd").css("background","gray");
+            $("ul").children("li:even").css("background","lightgreen");
+
+            // $("ul").children("li").first().css("background","gray");
+            // $("ul").children("li").last().css("background","gray");
+            $("ul").children("li").eq(2).css("background","gray");
+
+
+          });
+        });
+      </script>
+    
+    </body>
+  </head>
+</html>
